@@ -4,7 +4,8 @@
 		"hostname": {
 			"before": "@",
 			"args": {
-				"only_if_ssh": true
+				"only_if_ssh": true,
+				"exclude_domain": true
 			}
 		},
 		"virtualenv": {
