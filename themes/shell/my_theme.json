@@ -1,0 +1,54 @@
+{
+	"default_module": "powerline.segments.common",
+	"segment_data": {
+		"hostname": {
+			"before": "@",
+			"args": {
+				"only_if_ssh": true
+			}
+		},
+		"virtualenv": {
+			"before": "ⓔ  "
+		},
+		"branch": {
+			"before": " "
+		},
+		"fuzzy_time": {
+			"before": ""
+		}
+	},
+	"segments": {
+		"left": [
+			{
+				"name": "user",
+				"draw_soft_divider": false
+			},
+			{
+				"name": "hostname"
+			},
+			{
+				"name": "virtualenv"
+			},
+			{
+				"name": "cwd",
+				"args": {
+					"use_path_separator": true,
+					"dir_limit_depth": 5,
+					"dir_shorten_len": 1
+				}
+			}
+		],
+		"right": [
+			{
+				"module": "powerline.segments.shell",
+				"name": "last_pipe_status"
+			},
+			{
+				"name": "branch",
+				"args": {
+					"status_colors":true
+				}
+			}
+		]
+	}
+}

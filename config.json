@@ -24,8 +24,8 @@
 			}
 		},
 		"shell": {
-			"colorscheme": "default",
-			"theme": "default"
+			"colorscheme": "my_colors",
+			"theme": "my_theme"
 		},
 		"tmux": {
 			"colorscheme": "default",
